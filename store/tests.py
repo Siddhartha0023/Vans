@@ -8,7 +8,7 @@ from store.views import cart, products, details, index
 
 
 # url testing
-class TestUrls(SimpleTestCase):
+class  TestUrls(SimpleTestCase):
     def test_index_url(self):
         url = reverse('index')
         print(url)
