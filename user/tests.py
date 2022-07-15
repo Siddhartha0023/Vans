@@ -3,7 +3,7 @@ from django.test import SimpleTestCase, TestCase
 from user.views import login, register, logout
 
 
-class TestUrls(SimpleTestCase):
+class  TestUrls(SimpleTestCase):
     def test_index_url(self):
         url = reverse('login')
         print(url)
