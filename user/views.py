@@ -19,7 +19,7 @@ def register(request):
 
         User.objects.create_user(
 
-            first_name=request.POST['firstname'],
+            first_name= request.POST['firstname'],
 
             last_name=request.POST['lastname'],
 
