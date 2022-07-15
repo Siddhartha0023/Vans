@@ -46,7 +46,7 @@ def login(request):
 
    
 
-        user=authenticate(request,
+        user= authenticate(request,
 
         username =request.POST['username'],
 
