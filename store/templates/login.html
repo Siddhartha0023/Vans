@@ -1,0 +1,38 @@
+<!DOCTYPE html>    
+{% extends 'navbar.html' %}
+<html>  
+    {% block content %}  
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="css/style.css">    
+</head>    
+<body style="padding-bottom: 100px;">    
+    <form method='POST' action="">
+    {% csrf_token %}
+    
+    <div class="login" style="padding-bottom: 90px; padding-left: 500px; ">    
+    <h2>Login Page</h2><br>    
+    <form id="login" method="get" action="login.php" >    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="username" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="password" name="password" id="Password" placeholder="Password">    
+        <br><br>    
+        <input type="submit" value="login" id="log" value="Log In Here">       
+        <br><br>    
+        <input type="checkbox" id="check"> 
+        <span class="psw">Forgot <a href="{% url 'register'%}">Register</a></span>   
+        <span>Remember me</span>    
+        <br><br>    
+        Forgot <a href="#">Password</a>    
+    </form>     
+</div>  
+    </form> 
+    {% endblock content %} 
+</body>    
+</html>     

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+{% extends "navbar.html"%}
+
+<html lang="en">
+    {% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-My Store</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- <div class="container"> -->
+        <!-- <div class="navbar">
+            <div class="logo">
+                <img src="{% static 'images/1.png'%}" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="{% url 'index'%}">Home</a></li>
+                    <li><a href="{% url 'products'%}">Products</a></li>
+                </ul>
+            </nav>
+            <img src="{% static 'images/cart.png'%}" width="30px" height="30px">
+            <img src="{%static 'images/menu.png'%}" class="menu-icon" onclick="menutoggle()">
+        </div> -->
+    <!-- </div> -->
+
+        <div class="small-container">
+
+
+            <div class="row row-2">
+                <h2>All Products</h2>
+                <select>
+                    <option>Defult Shorting</option>
+                    <option>Short By Price</option>
+                    <option>Short By Popularity</option>
+                    <option>Short By Rating</option>
+                    <option>Short By Sale</option>
+                </select>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static 'images/pod1.webp'%}">
+                    <h4>Black Vans T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$35.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod2.webp'%}">
+                    <h4>Old Skool</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$80.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod3.webp'%}">
+                    <h4>Vans Pullover Hoddie</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$60.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod4.webp'%}">
+                    <h4>Vans Realm</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$55.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static 'images/pod5.jpg'%}">
+                    <h4>White Vans T-Shirt</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$25.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod6.webp'%}">
+                    <h4>Vans Zoned Out</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$24.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod7.webp'%}">
+                    <h4>Old Skool Low</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$80.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod8.webp'%}">
+                    <h4>Vans Construct Backpack</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$45.00</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static 'images/pod9.webp'%}">
+                    <h4>Vans Skool Backpack</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$32.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod14.webp'%}">
+                    <h4>Primary 17" Volley</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$80.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod13.webp'%}">
+                    <h4>Classic Sk8-HI</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>$90.00</p>
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/pod12.webp'%}">
+                    <h4>Sk8-HI Pastel</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p>$105.00</p>
+                </div>
+            </div>
+
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>
+        </div>
+
+    <!-- ------------footer--------------
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for free on Andriod and Ios</p>
+                    <div class="app-logo">
+                        <img src="{% static 'images/play-store.png'%}">
+                        <img src="{% static 'images/app-store.png'%}">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                <img src="{% static 'images/logo-1.png'%}">
+                <p>To give real service must add something which cannot be bought or measured with money.</p>
+            </div>
+            <div class="row">
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                   </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                   <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                   </ul>
+                </div>
+        </div>
+        <hr>
+        <p class="Copyright">Copyright 2022 - Softwarica College</p>
+    </div> -->
+
+    <!-- ------------js for toggle menu------------ -->
+    {% endblock content %}
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight =="0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

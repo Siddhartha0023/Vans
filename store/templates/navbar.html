@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="navbar" style="background-color: red;" >
+    <div class="logo" style="background-color: aqua;">
+    <img src="../static/images/1.png" width="125px">
+    </div>
+    <nav>
+        <ul id="MenuItems">
+            <li><a href="{% url 'index'%}">Home</a></li>
+            <li><a href="{% url 'products'%}">Products</a></li>
+            <a href="{% url 'logout'%}" class="btn btn-primary">logout</a>
+        </ul>
+    </nav>
+    <a href="/cart">
+    <img src="../static/images/cart.png" width="30px" height="30px">
+    <img src="../static/images/menu.png" class="menu-icon" onclick="menutoggle()">
+</a>
+
+</div>
+{% block content %}{% endblock content %}
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for free on Andriod and Ios</p>
+                <div class="app-logo">
+                    <img src="../static/images/play-store.png">
+                    <img src="../static/images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+            <img src="../static/images/logo-1.png">
+            <p>To give real service must add something which cannot be bought or measured with money.</p>
+        </div>
+        <div class="row">
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+               <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+               </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+               <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+               </ul>
+            </div>
+    </div>
+    <hr>
+    <p class="Copyright">Copyright 2022 - Softwarica College</p>
+</div>
+</html>
